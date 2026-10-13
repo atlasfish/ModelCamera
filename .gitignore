@@ -1,0 +1,23 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+qa/ml/.venv/
+qa/ml/interactive_segmentation.task
+
+# Local testing, delivery history and machine-specific automation
+.tmp/
+qa/
+releases/
+AGENTS.md
+.env
+.env.*
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.pem
+*.log

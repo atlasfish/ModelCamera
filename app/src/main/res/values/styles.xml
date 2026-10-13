@@ -1,0 +1,10 @@
+<resources>
+    <style name="ModelCameraTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorAccent">#2D8278</item>
+        <item name="android:alertDialogTheme">@style/ModelCameraDialogTheme</item>
+    </style>
+    <style name="ModelCameraDialogTheme" parent="android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_surface</item>
+        <item name="android:colorAccent">#2D8278</item>
+    </style>
+</resources>

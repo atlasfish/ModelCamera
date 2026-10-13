@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.modelcamera.app'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.modelcamera.app'
+        minSdk 26
+        targetSdk 34
+        versionCode 24
+        versionName '0.2.22'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+        if (project.hasProperty('arm64Only')) {
+            ndk { abiFilters 'arm64-v8a' }
+        }
+    }
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.runner'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies { implementation 'org.opencv:opencv:4.9.0' }
